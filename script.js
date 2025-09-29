@@ -36,7 +36,7 @@ function signIn() {
     let user = JSON.parse(storedUser);
     if (user.pass == password) {
         alert(`Login Successfull`)
-        window.location = "/home.html";
+        window.location = "home.html";
     }
     else {
         alert('Incorrect Password!')
@@ -53,7 +53,7 @@ let chartLabels = [];
 let chartData = [];
 let chartColors = [];
 
-// Chart.js setup
+Chart.js setup
 let ctx = document.getElementById('pieChart').getContext('2d');
 let pieChart = new Chart(ctx, {
     type: 'pie',
